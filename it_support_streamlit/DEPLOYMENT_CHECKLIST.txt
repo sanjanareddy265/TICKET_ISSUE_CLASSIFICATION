@@ -1,0 +1,5 @@
+1. Upload the complete project folder contents to a GitHub repository.
+2. Confirm app.py, requirements.txt, data/, and models/ are present.
+3. Deploy app.py from Streamlit Community Cloud.
+4. Test one ticket from each category and inspect confidence/manual-review behavior.
+5. Keep the 70% threshold labelled as a prototype threshold until validated.

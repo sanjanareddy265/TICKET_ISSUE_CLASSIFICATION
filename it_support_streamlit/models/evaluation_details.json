@@ -1,0 +1,390 @@
+{
+  "best_model": "Linear SVM",
+  "split": "GroupShuffleSplit(test_size=0.20, random_state=42), grouping by identical model_text",
+  "threshold": 0.7,
+  "categories": [
+    "Access",
+    "Email & Collaboration",
+    "Hardware",
+    "Network",
+    "Other",
+    "Security",
+    "Software"
+  ],
+  "test_rows": 361,
+  "train_rows": 1439,
+  "details": {
+    "Logistic Regression": {
+      "report": {
+        "Access": {
+          "precision": 0.9104477611940298,
+          "recall": 0.9104477611940298,
+          "f1-score": 0.9104477611940298,
+          "support": 67.0
+        },
+        "Email & Collaboration": {
+          "precision": 0.9545454545454546,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.8571428571428571,
+          "support": 54.0
+        },
+        "Hardware": {
+          "precision": 0.8928571428571429,
+          "recall": 0.9090909090909091,
+          "f1-score": 0.9009009009009009,
+          "support": 55.0
+        },
+        "Network": {
+          "precision": 0.8554216867469879,
+          "recall": 0.9102564102564102,
+          "f1-score": 0.8819875776397516,
+          "support": 78.0
+        },
+        "Other": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Security": {
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.7692307692307693,
+          "support": 24.0
+        },
+        "Software": {
+          "precision": 0.9142857142857143,
+          "recall": 0.9142857142857143,
+          "f1-score": 0.9142857142857143,
+          "support": 70.0
+        },
+        "accuracy": 0.889196675900277,
+        "macro avg": {
+          "precision": 0.8916919248450064,
+          "recall": 0.8935988437054536,
+          "f1-score": 0.8905707971991462,
+          "support": 361.0
+        },
+        "weighted avg": {
+          "precision": 0.8934026208080875,
+          "recall": 0.889196675900277,
+          "f1-score": 0.8894510619188446,
+          "support": 361.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          61,
+          0,
+          2,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          42,
+          2,
+          2,
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          0,
+          50,
+          3,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          71,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          0,
+          20,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          3,
+          0,
+          0,
+          64
+        ]
+      ]
+    },
+    "Naive Bayes": {
+      "report": {
+        "Access": {
+          "precision": 0.7021276595744681,
+          "recall": 0.9850746268656716,
+          "f1-score": 0.8198757763975155,
+          "support": 67.0
+        },
+        "Email & Collaboration": {
+          "precision": 0.9545454545454546,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.8571428571428571,
+          "support": 54.0
+        },
+        "Hardware": {
+          "precision": 0.9090909090909091,
+          "recall": 0.9090909090909091,
+          "f1-score": 0.9090909090909091,
+          "support": 55.0
+        },
+        "Network": {
+          "precision": 0.8518518518518519,
+          "recall": 0.8846153846153846,
+          "f1-score": 0.8679245283018868,
+          "support": 78.0
+        },
+        "Other": {
+          "precision": 1.0,
+          "recall": 0.23076923076923078,
+          "f1-score": 0.375,
+          "support": 13.0
+        },
+        "Security": {
+          "precision": 0.6363636363636364,
+          "recall": 0.2916666666666667,
+          "f1-score": 0.4,
+          "support": 24.0
+        },
+        "Software": {
+          "precision": 0.8767123287671232,
+          "recall": 0.9142857142857143,
+          "f1-score": 0.8951048951048951,
+          "support": 70.0
+        },
+        "accuracy": 0.8337950138504155,
+        "macro avg": {
+          "precision": 0.8472416914562062,
+          "recall": 0.7133257585816223,
+          "f1-score": 0.732019852291152,
+          "support": 361.0
+        },
+        "weighted avg": {
+          "precision": 0.8439751868914522,
+          "recall": 0.8337950138504155,
+          "f1-score": 0.8200771389729574,
+          "support": 361.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          66,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          42,
+          2,
+          3,
+          0,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          50,
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          4,
+          1,
+          1,
+          69,
+          0,
+          0,
+          3
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          10,
+          1,
+          0,
+          5,
+          0,
+          7,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          0,
+          0,
+          64
+        ]
+      ]
+    },
+    "Linear SVM": {
+      "report": {
+        "Access": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9552238805970149,
+          "f1-score": 0.920863309352518,
+          "support": 67.0
+        },
+        "Email & Collaboration": {
+          "precision": 0.9148936170212766,
+          "recall": 0.7962962962962963,
+          "f1-score": 0.8514851485148515,
+          "support": 54.0
+        },
+        "Hardware": {
+          "precision": 0.9090909090909091,
+          "recall": 0.9090909090909091,
+          "f1-score": 0.9090909090909091,
+          "support": 55.0
+        },
+        "Network": {
+          "precision": 0.8641975308641975,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.8805031446540881,
+          "support": 78.0
+        },
+        "Other": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "Security": {
+          "precision": 0.8,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8163265306122449,
+          "support": 24.0
+        },
+        "Software": {
+          "precision": 0.9558823529411765,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9420289855072463,
+          "support": 70.0
+        },
+        "accuracy": 0.9002770083102493,
+        "macro avg": {
+          "precision": 0.9047076141152068,
+          "recall": 0.9028502493321257,
+          "f1-score": 0.9028997182474082,
+          "support": 361.0
+        },
+        "weighted avg": {
+          "precision": 0.9016038309916738,
+          "recall": 0.9002770083102493,
+          "f1-score": 0.89997548684111,
+          "support": 361.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          64,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          43,
+          2,
+          4,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          3,
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          1,
+          70,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          0,
+          20,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          3,
+          0,
+          0,
+          65
+        ]
+      ]
+    }
+  }
+}
